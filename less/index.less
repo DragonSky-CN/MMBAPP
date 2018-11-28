@@ -1,0 +1,332 @@
+// 慢慢买首页 CSS 样式文件
+// flexible 规定 【基准值 = 设计图尺寸 / 10】
+@desgin: 750;                   // 设计图尺寸 750px
+@base: @desgin / 10;            // 基准值 75
+@mmbColor: #ff841d;           // 慢慢买网站主题色
+
+.mmb_container {
+    width: 100%;
+    // height: 5000px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+// 慢慢买网页头部
+.mmb_header {
+    width: 100%;
+    height: 98rem/@base;
+    background-color: @mmbColor;
+    position: relative;
+    border-bottom: 2rem/@base solid #e8d0bc;
+    // 慢慢买网页头部 - Logo区域
+    .mmb_logo_div {
+        position: absolute;
+        top: 24rem/@base;
+        left: 33rem/@base;
+        width: 371rem/@base;
+        height: 50rem/@base;
+        .mmb_logo {
+            height: 100%;
+        }
+    }
+    // 慢慢买网页头部 - APP下载区域
+    .mmb_app_download {
+        position: absolute;
+        top: 15rem/@base;
+        right: 13rem/@base;
+        display: block;
+        width: 68rem/@base;
+        height: 68rem/@base;
+    }
+}
+
+// 慢慢买搜索栏
+.mmb_search {
+    width: 100%;
+    height: 100rem/@base;
+    background-color: #ffffff;
+    position: relative;
+    // 慢慢买搜索栏 - input搜索栏
+    .search_input {
+        position: absolute;
+        top: 20rem/@base;
+        left: 19rem/@base;
+        width: 572rem/@base;
+        height: 60rem/@base;
+        border-radius: 30rem/@base;
+        color: #51475f;
+        font-size: 26rem/@base;
+        text-indent: 1.5em;
+        background-color: #f1f1f1;
+    }
+    // 慢慢买搜索栏 - 搜索按钮
+    .search_btn {
+        position: absolute;
+        top: 20rem/@base;
+        right: 19rem/@base;
+        width: 130rem/@base;
+        height: 60rem/@base;
+        line-height: 60rem/@base;
+        border-radius: 30rem/@base;
+        color: #ffffff;
+        font-size: 26rem/@base;
+        text-align: center;
+        background-color: @mmbColor;
+    }
+}
+
+// 慢慢买菜单栏
+.mmb_menus {
+    width: 100%;
+    margin-top: 20rem/@base;
+    padding: 10rem/@base 0;
+    background-color: #ffffff;
+    // 慢慢买菜单栏 - 独立菜单
+    .menu_item {
+        width: 25%;
+        position: relative;
+        box-sizing: border-box;
+        // border: 1px solid #000;
+        // 慢慢买菜单栏 - 独立菜单 a 链接
+        .menu_item_link {
+            width: 100%;
+            height: 150rem/@base;
+            // height: 174rem/@base;
+            padding-top: 10rem/@base;
+            padding-bottom: 10rem/@base;
+            display: block;
+            text-align: center;
+            img {
+                margin: 0 auto;
+                width: 100rem/@base;
+                height: 100rem/@base;
+            }
+            h6 {
+                margin-top: 10rem/@base;
+                font-size: 24rem/@base;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+// 折扣推荐区域
+.mmb_recommend {
+    width: 100%;
+    // height: 500rem/@base;
+    margin-top: 10rem/@base;
+    background-color: #ffffff;
+    // 折扣推荐区域 - 标题
+    .recommend_title {
+        width: 100%;
+        height: 70rem/@base;
+        background-color: @mmbColor;
+        position: relative;
+        h6 {
+            // position: absolute;
+            // top: 22rem/@base;
+            // left: 15rem/@base;
+            line-height: 70rem/@base;
+            text-indent: 1em;
+            color: #ffffff;
+            font-size: 24rem/@base;
+            font-weight: 400;
+        }
+        a {
+            position: absolute;
+            top: 15rem/@base;
+            right: 15rem/@base;
+            width: 40rem/@base;
+            height: 40rem/@base;
+            display: block;
+            background: url("../images/more.png") no-repeat center;
+        }
+    }
+    // 折扣推荐区域 - 商品列表
+    .recommend_list {
+        .recommend_list_ul {
+            li {
+                height: 255rem/@base;
+                border-bottom: 2px solid #e7e7e7;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    // 折扣推荐区域 - 商品列表 - 商品图片
+                    .list_img {
+                        width: 255rem/@base;
+                        height: 100%;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-top: -(200rem/@base)/2;
+                            margin-left: -(200rem/@base)/2;
+                            width: 200rem/@base;
+                            height: 200rem/@base;   
+                        }
+                    }
+                    // 折扣推荐区域 - 商品列表 - 商品信息
+                    .list_info {
+                        width: 490rem/@base;
+                        height: 100%;
+                        position: relative;
+                        .list_info_title {
+                            margin-top: 30rem/@base;
+                            line-height: 35rem/@base;
+                            .list_info_title_name {
+                                color: #000000;
+                                font-size: 30rem/@base;
+                            }
+                            .list_info_title_price {
+                                color: @mmbColor;
+                                font-size: 30rem/@base;
+                            }
+                        }
+                        .list_info_other {
+                            position: absolute;
+                            bottom: 20rem/@base;
+                            left: 0;
+                            width: 100%;
+                            font-size: 25rem/@base;
+                            .list_info_source {
+                                color: #cccccc;
+                            }
+                            .list_info_num {
+                                color: #cccccc;
+                                margin-right: 20rem/@base;
+
+                                i {
+                                    width: 20rem/@base;
+                                    height: 20rem/@base;
+                                    display: inline-block;
+                                    background: url("../images/2.svg") no-repeat center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 折扣推荐区域 - 更多优惠
+    .recommend_more {
+        width: 100%;
+        height: 100rem/@base;
+        position: relative;
+        a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -(66rem/@base)/2;
+            margin-left: -(700rem/@base)/2;
+            width: 700rem/@base;
+            height: 62rem/@base;
+            display: block;
+            border: 2px solid #cccccc;
+            border-radius: 15px;
+            text-align: center;
+            span {
+                line-height: 62rem/@base;
+                color: #000000;
+                font-size: 24rem/@base;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+// 品牌排行区域
+.mmb_rank {
+    margin-top: 20rem/@base;
+    .rank_title {
+        width: 100%;
+        height: 70rem/@base;
+        background-color: @mmbColor;
+        position: relative;
+        h6 {
+            // position: absolute;
+            // top: 22rem/@base;
+            // left: 15rem/@base;
+            line-height: 70rem/@base;
+            text-indent: 1em;
+            color: #ffffff;
+            font-size: 24rem/@base;
+            font-weight: 400;
+        }
+        a {
+            position: absolute;
+            top: 15rem/@base;
+            right: 15rem/@base;
+            width: 40rem/@base;
+            height: 40rem/@base;
+            display: block;
+            background: url("../images/more.png") no-repeat center;
+        }
+    }
+}
+
+// 慢慢买网页底部
+.mmb_footer {
+    width: 100%;
+    height: 166rem/@base;
+    margin-top: 50rem/@base;
+    // 慢慢买网页底部 - 菜单栏
+    .footer_menu {
+        width: 100%;
+        height: 64rem/@base;
+        display: flex;
+        a {
+            flex: 1;
+            height: 64rem/@base;
+            line-height: 64rem/@base;
+            display: block;
+            text-align: center;
+            font-size: 24rem/@base;
+            color: #000000;
+            border-top: 2px solid #cccccc;
+            border-bottom: 2px solid #cccccc;
+        }
+        a:nth-child(2) {
+            border-left: 2px solid #cccccc;
+            border-right: 2px solid #cccccc;
+        }
+        .footer_menu_returnTop {
+            position: relative;
+            i {
+                position: absolute;
+                top: 50%;
+                left: 40rem/@base;
+                margin-top: -(30rem/@base)/2;
+                width: 30px;
+                height: 30px;
+                display: block;
+                background: url("../images/top.jpg") no-repeat center;
+            }
+        }
+    }
+    // 慢慢买网页底部 - 信息区域
+    .footer_info {
+        width: 100%;
+        div {
+            text-align: center;
+            margin-top: 25rem/@base;
+            .app_download {
+                color: @mmbColor;
+                font-size: 20rem/@base;
+            }
+            .mobile_web {
+                color: #000000;
+                font-size: 20rem/@base;
+            }
+            span {
+                color: #cccccc;
+                font-size: 20rem/@base;
+            }
+        }
+        div:nth-child(2) {
+            margin-top: 10rem/@base;
+        }
+    }
+}

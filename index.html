@@ -5,8 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>慢慢买</title>
+    <!-- 引入样式统一化 CSS 文件 -->
+    <link rel="stylesheet" href="./css/common/normalize.css">
+    <!-- 引入网站初始化 CSS 文件 -->
+    <link rel="stylesheet" href="./css/common/base.css">
+    <!-- 引入首页 CSS 文件 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入 flexible JS 文件 -->
+    <script src="./lib/flexible/flexible.min.js"></script>
 </head>
 <body>
-    <h1>慢慢买项目首页</h1>
+    <div class="mmb_container">
+        <!-- 慢慢买网页头部 -->
+        <div class="mmb_header">
+            <div class="mmb_logo_div">
+                <img class="mmb_logo" src="./images/header_logo.png" alt="">
+            </div>
+            <a class="mmb_app_download" href="#">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+        <!-- 慢慢买搜索栏 -->
+        <div class="mmb_search">
+            <input class="search_input" type="text" placeholder="请输入你想比价的商品">
+            <button class="search_btn">搜索</button>
+        </div>
+        <!-- 慢慢买菜单栏 -->
+        <div class="mmb_menus clearfix">
+            <!-- artTemplate 区域 -->
+        </div>
+        <!-- 折扣推荐区域 -->
+        <div class="mmb_recommend">
+            <div class="recommend_title">
+                <h6>超值折扣推荐</h6>
+                <a href="#"></a>
+            </div>
+            <div class="recommend_list">
+                <ul class="recommend_list_ul">
+                    <!-- artTemplate 区域 -->
+                </ul>
+            </div>
+            <div class="recommend_more">
+                <a href="#">
+                    <span>更多优惠信息 >></span>
+                    <i></i>
+                </a>
+            </div>
+        </div>
+        <!-- 品牌排行区域 -->
+        <div class="mmb_rank">
+            <div class="rank_title">
+                <h6>品牌排行</h6>
+                <a href="#"></a>
+            </div>
+        </div>
+        <!-- 慢慢买网页底部 -->
+        <div class="mmb_footer">
+            <div class="footer_menu">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a class="footer_menu_returnTop" href="javascript:;">
+                    <i></i>
+                    返回顶部
+                </a>
+            </div>
+            <div class="footer_info">
+                <div>
+                    <a class="app_download" href="#">手机APP下载</a>
+                    <a class="mobile_web" href="#">慢慢买手机版</a>
+                    <span>--掌上比价平台</span>
+                </div>
+                <div>
+                    <span>m.manmanbuy.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 菜单栏模板 -->
+    <script type="text/html" id="menu_items">
+        {{each result v i}}
+        <!-- 根据 indexmenuId 的值是否为 7 判断是否是更多菜单 -->
+        <div class="menu_item fl {{v.indexmenuId == 7 ? "more" : ""}}">
+            <a class="menu_item_link" href="{{v.titlehref}}">
+                <!-- 因为保护措施 artTemplate 会转义 HTML 代码为字符串输出，如果不需要转义时只需要在前面加个 @ 号（以前是 # 号） -->
+                {{@v.img}}
+                <h6>{{v.name}}</h6>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- 折扣推荐区域模板 -->
+    <script type="text/html" id="recommend_lists">
+        {{each result v i}}
+        <li>
+            <a class="clearfix" href="#">
+                <div class="list_img fl">
+                    {{@v.productImgLg}}
+                </div>
+                <div class="list_info fr">
+                    <div class="list_info_title txt-cut">
+                        <span class="list_info_title_name">{{v.productName}}</span>
+                        <span class="list_info_title_price">{{v.productPinkage}}</span>
+                    </div>
+                    <div class="list_info_other">
+                        <span class="list_info_source fl">
+                            {{v.productFrom}} | {{v.productTime}}
+                        </span>
+                        <span class="list_info_num fr">
+                            <i></i>
+                            {{v.comcount}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 引入 JQuery 文件 -->
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 引入模板引擎 JS 文件 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入首页 JS 文件 -->
+    <script src="./js/index.js"></script>
 </body>
 </html>
