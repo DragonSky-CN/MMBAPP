@@ -1,0 +1,70 @@
+@desgin: 750;                   // 设计图尺寸 750px
+@base: @desgin / 10;            // 基准值 75
+@mmbColor: #ff841d;           // 慢慢买网站主题色
+
+// 慢慢买分类菜单
+.mmb_category {
+    width: 100%;
+    .category_lists {
+        width: 100%;
+        min-height: 82rem/@base;
+        box-sizing: border-box;
+        background-color: #ededed;
+        border: 2rem/@base solid #cccccc;
+        border-bottom: none;
+        // 慢慢买分类菜单 - 分类标题
+        .lists_title {
+            height: 82rem/@base;
+            line-height: 82rem/@base;
+            padding-left: 25rem/@base;
+            position: relative;
+            span {
+                font-size: 26rem/@base;
+                font-weight: 700;
+            }
+            i {
+                position: absolute;
+                top: 50%;                
+                right: 30rem/@base;
+                margin-top: -(31rem/@base)/2;
+                width: 48rem/@base;
+                height: 31rem/@base;
+                display: block;
+                background: url("../images/icon_bar_03.png") no-repeat center;
+                background-size: contain;
+                // 使图标旋转 180 度
+                transform: rotate(180deg);
+                transition: transform .5s;
+            }
+        }
+        // 慢慢买分类菜单 - 分类列表
+        .lists_menus {
+            background-color: #fff;
+            li {
+                float: left;
+                width: 100%/3;
+                height: 78rem/@base;
+                box-sizing: border-box;
+                border: 1rem/@base solid #ccc;
+                // margin: 0px 0px -1px -1px;
+                a {
+                    width: 100%;
+                    height: 78rem/@base;
+                    line-height: 78rem/@base;
+                    display: block;
+                    text-align: center;
+                    color: #000000;
+                    font-weight: 400;
+                    font-size: 24rem/@base;
+                }
+            }
+        }
+    }
+    .category_lists:first-child {
+        border-radius: 10rem/@base 10rem/@base 0 0;
+    }
+    .category_lists:last-child {
+        border-bottom: 2rem/@base solid #cccccc;
+        border-radius: 0 0 10rem/@base 10rem/@base;
+    }
+}

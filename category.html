@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买 - 分类页面</title>
+    <!-- 引入样式统一化 CSS 文件 -->
+    <link rel="stylesheet" href="./css/common/normalize.css">
+    <!-- 引入网站初始化 CSS 文件 -->
+    <link rel="stylesheet" href="./css/common/base.css">
+    <!-- 引入网站基础 CSS 文件 -->
+    <link rel="stylesheet" href="./css/common/core.css">
+    <!-- 引入 分类页面 CSS 文件 -->
+    <link rel="stylesheet" href="./css/category.css">
+    <!-- 引入 flexible JS 文件 -->
+    <script src="./lib/flexible/flexible.min.js"></script>
+</head>
+<body>
+    <div class="mmb_container">
+        <!-- 慢慢买网页头部 -->
+        <div class="mmb_header">
+            <div class="mmb_logo_div">
+                <img class="mmb_logo" src="./images/header_logo.png" alt="">
+            </div>
+            <a class="mmb_app_download" href="#">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+        <!-- 慢慢买搜索栏 -->
+        <div class="mmb_search">
+            <input class="search_input" type="text" placeholder="请输入你想比价的商品">
+            <button class="search_btn">搜索</button>
+        </div>
+        <!-- 慢慢买分类菜单 -->
+        <div class="mmb_category">
+            <div class="mmb_category_div">
+                <ul class="mmb_category_container">
+                    <!-- artTemplate 区域 -->
+                </ul>
+            </div>
+        </div>
+        <!-- 慢慢买网页底部 -->
+        <div class="mmb_footer">
+            <div class="footer_menu">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a class="footer_menu_returnTop" href="javascript:;">
+                    <i></i>
+                    返回顶部
+                </a>
+            </div>
+            <div class="footer_info">
+                <div>
+                    <a class="app_download" href="#">手机APP下载</a>
+                    <a class="mobile_web" href="#">慢慢买手机版</a>
+                    <span>--掌上比价平台</span>
+                </div>
+                <div>
+                    <span>m.manmanbuy.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 分类标题模板 -->
+    <script type="text/html" id="category_lists_title">
+        {{each result v i}}
+        <li class="category_lists {{v.titleId == 0 ? "first" : v.titleId == result.length - 1 ? "last" : ""}}">
+            <div class="lists_title" index="{{v.titleId}}" data-id="{{v.titleId}}">
+                <span>{{v.title}}</span>
+                <i></i>
+            </div>
+            <ul class="lists_menus clearfix"></ul>
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 分类列表模板 -->
+    <script type="text/html" id="category_lists_menu">
+        {{each result v i}}
+            <li><a class="one-txt-cut" href="productList.html?categoryId={{v.categoryId}}">{{v.category}}</a></li>
+        {{/each}}
+    </script>
+
+    <!-- 引入 JQuery 文件 -->
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 引入模板引擎 JS 文件 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入 分类页面 JS 文件 -->
+    <script src="./js/category.js"></script>
+</body>
+</html>
