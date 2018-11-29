@@ -1,0 +1,155 @@
+@desgin: 750;                   // 设计图尺寸 750px
+@base: @desgin / 10;            // 基准值 75
+@mmbColor: #ff841d;           // 慢慢买网站主题色
+
+// 慢慢买导航菜单栏
+.mmb_nav_menu {
+    width: 100%;
+    height: 72rem/@base;
+    border-top: 2rem/@base solid #ccc;
+    border-bottom: 2rem/@base solid #ccc;
+    position: relative;
+    // 慢慢买导航菜单栏 - 面包屑导航
+    .mmb_nav_breadcrumbs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 72rem/@base;
+        padding-left: 15rem/@base;
+        a {
+            height: 72rem/@base;
+            line-height: 72rem/@base;
+            color: #8a8a8a;
+            font-size: 24rem/@base;
+        }
+        a:hover {
+            color: @mmbColor;
+        }
+        .last {
+            color: #3d3d3d;
+        }
+    }
+    // 慢慢买导航菜单栏 - 筛选按钮
+    .mmb_nav_screen {
+        position: absolute;
+        top: 50%;
+        right: 15rem/@base;
+        margin-top: -(54rem/@base)/2;
+        button {
+            width: 120rem/@base;
+            height: 54rem/@base;
+            font-size: 24rem/@base;
+            display: block;
+            border: 2rem/@base solid #ccc;
+            border-radius: 3rem/@base;
+            box-shadow: 1px 1px 3px #757575;
+        }
+    }
+}
+// 慢慢买商品列表
+.mmb_commodity_lists {
+    width: 100%;
+    background-color: #ffffff;
+    // 慢慢买商品列表 - 商品列表
+    .commodity_list_ul {
+        li {
+            height: 255rem/@base;
+            border-bottom: 2rem/@base solid #e7e7e7;
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                // 慢慢买商品列表 - 商品列表 - 商品图片
+                .list_img {
+                    width: 255rem/@base;
+                    height: 100%;
+                    position: relative;
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin-top: -(200rem/@base)/2;
+                        margin-left: -(200rem/@base)/2;
+                        width: 200rem/@base;
+                        height: 200rem/@base;   
+                    }
+                }
+                // 慢慢买商品列表 - 商品列表 - 商品信息
+                .list_info {
+                    width: 490rem/@base;
+                    height: 100%;
+                    position: relative;
+                    .list_info_title {
+                        margin-top: 30rem/@base;
+                        line-height: 35rem/@base;
+                        .commodity_name {
+                            color: #000000;
+                            font-size: 30rem/@base;
+                        }
+                    }
+                    .list_info_price {
+                        position: absolute;
+                        bottom: 66rem/@base;
+                        left: 0;
+                        .commodity_price {
+                            color: @mmbColor;
+                            font-size: 30rem/@base;
+                        }
+                    }
+                    .list_info_other {
+                        position: absolute;
+                        bottom: 20rem/@base;
+                        left: 0;
+                        width: 100%;
+                        font-size: 25rem/@base;
+                        .list_info_business {
+                            position: absolute;
+                            top: -20rem/@base;
+                            left: 0;
+                            color: #cccccc;
+                        }
+                        .list_info_comment {
+                            position: absolute;
+                            top: -20rem/@base;
+                            left: 150rem/@base;
+                            color: #cccccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// 慢慢买商品列表分页跳转
+.mmb_commodity_lists_page {
+    width: 100%;
+    height: 92rem/@base;
+    background: #ffffff;
+    position: relative;
+    button {
+        width: 160rem/@base;
+        height: 66rem/@base;
+        display: block;
+        border: 2rem/@base solid #ccc;
+        margin-top: 13rem/@base;
+        margin-left: 10rem/@base;
+        margin-right: 10rem/@base;
+        color: #000000;
+        font-size: 24rem/@base;
+        border: 2rem/@base solid #ccc;
+        border-radius: 10rem/@base;
+    }
+    .page_select {
+        position: absolute;
+        top: 13rem/@base;
+        left: 50%;
+        margin-left: -(130rem/@base)/2;
+        width: 130rem/@base;
+        height: 66rem/@base;
+        line-height: 66rem/@base;
+        text-align: center;
+        font-size: 24rem/@base;
+        border: 2rem/@base solid #ccc;
+        border-radius: 5rem/@base;
+    }
+}

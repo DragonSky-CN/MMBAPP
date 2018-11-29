@@ -58,14 +58,14 @@ $(function() {
     }
     // 点击切换 i 标签 transform 旋转角度
     function mmb_list_sign_switch( id ) {
-        $ul = $('div[index=' + id + '] i');
-        var deg = $ul.css('transform');
+        $div = $('div[index=' + id + '] i');
+        var deg = $div.css('transform');
         // 控制台调试输出语句
         // console.log(deg);
         if (deg == 'matrix(-1, 0, 0, -1, 0, 0)') {
-            $ul.css('transform', 'rotate(0deg)');
+            $div.css('transform', 'rotate(0deg)');
         } else {
-            $ul.css('transform', 'rotate(180deg)');
+            $div.css('transform', 'rotate(180deg)');
         }
     }
     // 回到顶部功能

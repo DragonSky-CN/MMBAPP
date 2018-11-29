@@ -68,6 +68,7 @@
     <!-- 分类标题模板 -->
     <script type="text/html" id="category_lists_title">
         {{each result v i}}
+        <!-- 判断是第一个 li 标签还是最后一个 li 标签，并添加相应的类名 -->
         <li class="category_lists {{v.titleId == 0 ? "first" : v.titleId == result.length - 1 ? "last" : ""}}">
             <div class="lists_title" index="{{v.titleId}}" data-id="{{v.titleId}}">
                 <span>{{v.title}}</span>

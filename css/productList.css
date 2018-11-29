@@ -1,0 +1,140 @@
+.mmb_nav_menu {
+  width: 100%;
+  height: 0.96rem;
+  border-top: 0.02666667rem solid #cccccc;
+  border-bottom: 0.02666667rem solid #cccccc;
+  position: relative;
+}
+.mmb_nav_menu .mmb_nav_breadcrumbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.96rem;
+  padding-left: 0.2rem;
+}
+.mmb_nav_menu .mmb_nav_breadcrumbs a {
+  height: 0.96rem;
+  line-height: 0.96rem;
+  color: #8a8a8a;
+  font-size: 0.32rem;
+}
+.mmb_nav_menu .mmb_nav_breadcrumbs a:hover {
+  color: #ff841d;
+}
+.mmb_nav_menu .mmb_nav_breadcrumbs .last {
+  color: #3d3d3d;
+}
+.mmb_nav_menu .mmb_nav_screen {
+  position: absolute;
+  top: 50%;
+  right: 0.2rem;
+  margin-top: -0.36rem;
+}
+.mmb_nav_menu .mmb_nav_screen button {
+  width: 1.6rem;
+  height: 0.72rem;
+  font-size: 0.32rem;
+  display: block;
+  border: 0.02666667rem solid #cccccc;
+  border-radius: 0.04rem;
+  box-shadow: 1px 1px 3px #757575;
+}
+.mmb_commodity_lists {
+  width: 100%;
+  background-color: #ffffff;
+}
+.mmb_commodity_lists .commodity_list_ul li {
+  height: 3.4rem;
+  border-bottom: 0.02666667rem solid #e7e7e7;
+}
+.mmb_commodity_lists .commodity_list_ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_img {
+  width: 3.4rem;
+  height: 100%;
+  position: relative;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1.33333333rem;
+  margin-left: -1.33333333rem;
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_info {
+  width: 6.53333333rem;
+  height: 100%;
+  position: relative;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_title {
+  margin-top: 0.4rem;
+  line-height: 0.46666667rem;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_title .commodity_name {
+  color: #000000;
+  font-size: 0.4rem;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_price {
+  position: absolute;
+  bottom: 0.88rem;
+  left: 0;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_price .commodity_price {
+  color: #ff841d;
+  font-size: 0.4rem;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_other {
+  position: absolute;
+  bottom: 0.26666667rem;
+  left: 0;
+  width: 100%;
+  font-size: 0.33333333rem;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_other .list_info_business {
+  position: absolute;
+  top: -0.26666667rem;
+  left: 0;
+  color: #cccccc;
+}
+.mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_other .list_info_comment {
+  position: absolute;
+  top: -0.26666667rem;
+  left: 2rem;
+  color: #cccccc;
+}
+.mmb_commodity_lists_page {
+  width: 100%;
+  height: 1.22666667rem;
+  background: #ffffff;
+  position: relative;
+}
+.mmb_commodity_lists_page button {
+  width: 2.13333333rem;
+  height: 0.88rem;
+  display: block;
+  margin-top: 0.17333333rem;
+  margin-left: 0.13333333rem;
+  margin-right: 0.13333333rem;
+  color: #000000;
+  font-size: 0.32rem;
+  border: 0.02666667rem solid #cccccc;
+  border-radius: 0.13333333rem;
+}
+.mmb_commodity_lists_page .page_select {
+  position: absolute;
+  top: 0.17333333rem;
+  left: 50%;
+  margin-left: -0.86666667rem;
+  width: 1.73333333rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  text-align: center;
+  font-size: 0.32rem;
+  border: 0.02666667rem solid #cccccc;
+  border-radius: 0.06666667rem;
+}
