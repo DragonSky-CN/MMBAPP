@@ -55,7 +55,7 @@ $(function() {
         for(var i = 1; i < totlePage + 1; i++) {
             page.push({currentPageNum, totlePage});
         };
-        console.log({data : page});
+        // console.log({data : page});
         $('.page_select').html(template('page_list', {data : page}));
         // 同步当前页面标识为渲染的页数
         currentPage = currentPageNum;
@@ -87,11 +87,5 @@ $(function() {
         render($('#page_select option:selected').val());
         // 返回顶部
         $(window).scrollTop(0);
-    });
-    // 回到顶部功能
-    $('.footer_menu_returnTop').on('click', function() {
-        $('html,body').animate({
-            scrollTop: 0
-        }, 500)
     });
 })

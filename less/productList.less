@@ -2,14 +2,14 @@
 @base: @desgin / 10;            // 基准值 75
 @mmbColor: #ff841d;           // 慢慢买网站主题色
 
-// 慢慢买导航菜单栏
+// 商品列表导航菜单栏
 .mmb_nav_menu {
     width: 100%;
     height: 72rem/@base;
     border-top: 2rem/@base solid #ccc;
     border-bottom: 2rem/@base solid #ccc;
     position: relative;
-    // 慢慢买导航菜单栏 - 面包屑导航
+    // 商品列表导航菜单栏 - 面包屑导航
     .mmb_nav_breadcrumbs {
         position: absolute;
         top: 0;
@@ -29,7 +29,7 @@
             color: #3d3d3d;
         }
     }
-    // 慢慢买导航菜单栏 - 筛选按钮
+    // 商品列表导航菜单栏 - 筛选按钮
     .mmb_nav_screen {
         position: absolute;
         top: 50%;
@@ -46,11 +46,11 @@
         }
     }
 }
-// 慢慢买商品列表
+// 商品列表区域
 .mmb_commodity_lists {
     width: 100%;
     background-color: #ffffff;
-    // 慢慢买商品列表 - 商品列表
+    // 商品列表区域 - 商品列表
     .commodity_list_ul {
         li {
             height: 255rem/@base;
@@ -59,7 +59,7 @@
                 width: 100%;
                 height: 100%;
                 display: block;
-                // 慢慢买商品列表 - 商品列表 - 商品图片
+                // 商品列表区域 - 商品列表 - 商品图片
                 .list_img {
                     width: 255rem/@base;
                     height: 100%;
@@ -74,7 +74,7 @@
                         height: 200rem/@base;   
                     }
                 }
-                // 慢慢买商品列表 - 商品列表 - 商品信息
+                // 商品列表区域 - 商品列表 - 商品信息
                 .list_info {
                     width: 490rem/@base;
                     height: 100%;
@@ -120,12 +120,13 @@
         }
     }
 }
-// 慢慢买商品列表分页跳转
+// 商品列表分页跳转
 .mmb_commodity_lists_page {
     width: 100%;
     height: 92rem/@base;
     background: #ffffff;
     position: relative;
+    // 商品列表分页跳转 - 上下页面按钮
     button {
         width: 160rem/@base;
         height: 66rem/@base;
@@ -139,6 +140,7 @@
         border: 2rem/@base solid #ccc;
         border-radius: 10rem/@base;
     }
+    // 商品列表分页跳转 - 下拉选择分页跳转
     .page_select {
         position: absolute;
         top: 13rem/@base;

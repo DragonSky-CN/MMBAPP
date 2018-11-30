@@ -1,0 +1,267 @@
+@desgin: 750;                   // 设计图尺寸 750px
+@base: @desgin / 10;            // 基准值 75
+@mmbColor: #ff841d;           // 慢慢买网站主题色
+
+// 商品详情导航菜单栏
+.mmb_nav_menu {
+    width: 100%;
+    height: 72rem/@base;
+    border-top: 2rem/@base solid #ccc;
+    border-bottom: 2rem/@base solid #ccc;
+    position: relative;
+    // 商品详情导航菜单栏 - 面包屑导航
+    .mmb_nav_breadcrumbs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 72rem/@base;
+        padding-left: 15rem/@base;
+        a {
+            height: 72rem/@base;
+            line-height: 72rem/@base;
+            color: #8a8a8a;
+            font-size: 24rem/@base;
+        }
+        a:hover {
+            color: @mmbColor;
+        }
+        .last {
+            color: #3d3d3d;
+        }
+    }
+    // 商品详情导航菜单栏 - 筛选按钮
+    .mmb_nav_screen {
+        position: absolute;
+        top: 50%;
+        right: 15rem/@base;
+        margin-top: -(54rem/@base)/2;
+        button {
+            width: 120rem/@base;
+            height: 54rem/@base;
+            font-size: 24rem/@base;
+            display: block;
+            border: 2rem/@base solid #ccc;
+            border-radius: 3rem/@base;
+            box-shadow: 1px 1px 3px #757575;
+        }
+    }
+}
+
+// 商品详情区域
+.mmb_commodity_info {
+    width: 100%;
+    height: 500rem/@base;
+    padding: 30rem/@base;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    position: relative;
+    .commodity_show_title {
+        width: 100%;
+        height: 100rem/@base;
+        h6 {
+            text-align: center;
+            font-size: 32rem/@base;
+            font-weight: 400;
+        }
+    }
+    .commodity_show_img {
+        width: 100%;
+        img {
+            width: 300rem/@base;
+            height: 300rem/@base;
+            margin: 0 auto;
+            // background-size: contain;
+        }
+    }
+    .commodity_show_collect {
+        position: absolute;
+        bottom: 50rem/@base;
+        right: 50rem/@base;
+        a {
+            display: block;
+            border-radius: 50%;
+            img {
+                width: 80rem/@base;
+                height: 80rem/@base;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+// 商品详情比价区域
+.mmb_commodity_contrast_price {
+    width: 100%;
+    background-color: #ffffff;
+    // 商品详情比价区域 - 菜单栏
+    .contrast_price_menus {
+        display: flex;
+        div {
+            flex: 1;
+            height: 64rem/@base;
+            line-height: 64rem/@base;
+            border: 2rem/@base solid #b12300;
+            border-right: none;
+            text-align: center;
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+                span {
+                    color: #ffffff;
+                    font-size: 24rem/@base
+                }
+                background-color: #fdc62e;
+            }
+            a.checked {
+                background-color: @mmbColor;
+            }
+        }
+        div:last-child {
+            border-right: 2rem/@base solid #b12300;
+        }
+    }
+    // 商品详情比价区域 - 价格栏
+    .contrast_price {
+        width: 100%;
+        // 商品详情比价区域 - 价格栏 - 价格来源
+        .contrast_price_source {
+            width: 100%;
+            height: 88rem/@base;
+            border-bottom: 2rem/@base solid #ccc;
+            position: relative;
+            .contrast_price_source_left {
+                position: absolute;
+                top: 27rem/@base;
+                left: 15rem/@base;
+                img {
+                    width: 34rem/@base;
+                    height: 34rem/@base;
+                    vertical-align: middle;
+                    display: inline-block;
+                }
+                span {
+                    vertical-align: middle;
+                    display: inline-block;
+                    font-size: 24rem/@base;
+                }
+            }
+            .contrast_price_source_right {
+                position: absolute;
+                top: 20rem/@base;
+                right: 15rem/@base;
+                span {
+                    color: rgb(155, 0, 0);
+                    font-size: 24rem/@base;
+                    display: inline-block;
+                    margin-right: 20rem/@base;
+                }
+                a {
+                    width: 114rem/@base;
+                    height: 48rem/@base;
+                    line-height: 48rem/@base;
+                    color: #ffffff;
+                    text-align: center;
+                    font-size: 24rem/@base;
+                    border: 2rem/@base solid #ff3f00;
+                    border-radius: 10rem/@base;
+                    background-color: #ff5000;
+                    display: inline-block;
+                }
+            }
+        }
+        // 商品详情比价区域 - 价格栏 - 声明
+        .contrast_price_explain {
+            width: 100%;
+            height: 114rem/@base;
+            border-bottom: 8rem/@base solid #606060;
+            overflow: hidden;
+            span {
+                color: rgb(119, 119, 119);
+                font-size: 20rem/@base;
+            }
+        }
+    }
+}
+
+// 商品详情评价区域
+.mmb_commodity_evaluate {
+    width: 100%;
+    // height: 500rem/@base;
+    margin-top: 5rem/@base;
+    background-color: #ffffff;
+    overflow: hidden;
+    // 商品详情评价区域 - 评论标题
+    .commodity_evaluate_title {
+        width: 100%;
+        height: 66rem/@base;
+        line-height: 66rem/@base;
+        box-sizing: border-box;
+        border-top: 2px solid rgb(110, 110, 110);
+        border-bottom: 2px solid rgb(110, 110, 110);
+        background-color: #dbdbdb;
+        text-align: center;
+        span {
+            color: #000000;
+            font-size: 24rem/@base;
+        }
+    }
+    // 商品详情评价区域 - 评论内容
+    .commodity_evaluates {
+        width: 100%;
+        li {
+            padding: 15rem/@base;
+            border-bottom: 2rem/@base solid #ccc;
+            box-sizing: border-box;
+            // 商品详情评价区域 - 用户信息区域
+            .user_evaluates_info {
+                height: 50rem/@base;
+                span {
+                    font-size: 18rem/@base;
+                    color: #777777;
+                }
+                .user_buy_source {
+                    position: relative;
+                    span {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+            // 商品详情评价区域 - 用户评论内容区域
+            .user_evaluates {
+                width: 100%;
+                p {
+                    text-indent: 2em;
+                    font-size: 20rem/@base;
+                    line-height: 1.8em;
+                }
+            }
+        }
+    }
+    // 商品详情评价区域 - 更多评论
+    .commodity_evaluate_more {
+        width: 100%;
+        height: 136rem/@base;
+        position: relative;
+        background-color: #ffffff;
+        a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -(60rem/@base)/2;
+            margin-left: -(700rem/@base)/2;
+            width: 700rem/@base;
+            height: 60rem/@base;
+            line-height: 60rem/@base;
+            display: block;
+            background-color: #ccc;
+            border: 2rem/@base solid rgb(120, 120, 120);
+            border-radius: 10rem/@base;
+            text-align: center;
+            font-size: 24rem/@base;
+            color: #000000;
+        }
+    }
+}

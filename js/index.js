@@ -49,10 +49,4 @@ $(function() {
             $('.mmb_recommend .recommend_list .recommend_list_ul').html(template('recommend_lists', data));
         }
     });
-    // 回到顶部功能
-    $('.footer_menu_returnTop').on('click', function() {
-        $('html,body').animate({
-            scrollTop: 0
-        }, 500)
-    });
 });

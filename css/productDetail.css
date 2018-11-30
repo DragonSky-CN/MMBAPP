@@ -1,0 +1,243 @@
+.mmb_nav_menu {
+  width: 100%;
+  height: 0.96rem;
+  border-top: 0.02666667rem solid #cccccc;
+  border-bottom: 0.02666667rem solid #cccccc;
+  position: relative;
+}
+.mmb_nav_menu .mmb_nav_breadcrumbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.96rem;
+  padding-left: 0.2rem;
+}
+.mmb_nav_menu .mmb_nav_breadcrumbs a {
+  height: 0.96rem;
+  line-height: 0.96rem;
+  color: #8a8a8a;
+  font-size: 0.32rem;
+}
+.mmb_nav_menu .mmb_nav_breadcrumbs a:hover {
+  color: #ff841d;
+}
+.mmb_nav_menu .mmb_nav_breadcrumbs .last {
+  color: #3d3d3d;
+}
+.mmb_nav_menu .mmb_nav_screen {
+  position: absolute;
+  top: 50%;
+  right: 0.2rem;
+  margin-top: -0.36rem;
+}
+.mmb_nav_menu .mmb_nav_screen button {
+  width: 1.6rem;
+  height: 0.72rem;
+  font-size: 0.32rem;
+  display: block;
+  border: 0.02666667rem solid #cccccc;
+  border-radius: 0.04rem;
+  box-shadow: 1px 1px 3px #757575;
+}
+.mmb_commodity_info {
+  width: 100%;
+  height: 6.66666667rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+}
+.mmb_commodity_info .commodity_show_title {
+  width: 100%;
+  height: 1.33333333rem;
+}
+.mmb_commodity_info .commodity_show_title h6 {
+  text-align: center;
+  font-size: 0.42666667rem;
+  font-weight: 400;
+}
+.mmb_commodity_info .commodity_show_img {
+  width: 100%;
+}
+.mmb_commodity_info .commodity_show_img img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+.mmb_commodity_info .commodity_show_collect {
+  position: absolute;
+  bottom: 0.66666667rem;
+  right: 0.66666667rem;
+}
+.mmb_commodity_info .commodity_show_collect a {
+  display: block;
+  border-radius: 50%;
+}
+.mmb_commodity_info .commodity_show_collect a img {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  border-radius: 50%;
+}
+.mmb_commodity_contrast_price {
+  width: 100%;
+  background-color: #ffffff;
+}
+.mmb_commodity_contrast_price .contrast_price_menus {
+  display: flex;
+}
+.mmb_commodity_contrast_price .contrast_price_menus div {
+  flex: 1;
+  height: 0.85333333rem;
+  line-height: 0.85333333rem;
+  border: 0.02666667rem solid #b12300;
+  border-right: none;
+  text-align: center;
+}
+.mmb_commodity_contrast_price .contrast_price_menus div a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #fdc62e;
+}
+.mmb_commodity_contrast_price .contrast_price_menus div a span {
+  color: #ffffff;
+  font-size: 0.32rem;
+}
+.mmb_commodity_contrast_price .contrast_price_menus div a.checked {
+  background-color: #ff841d;
+}
+.mmb_commodity_contrast_price .contrast_price_menus div:last-child {
+  border-right: 0.02666667rem solid #b12300;
+}
+.mmb_commodity_contrast_price .contrast_price {
+  width: 100%;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_source {
+  width: 100%;
+  height: 1.17333333rem;
+  border-bottom: 0.02666667rem solid #cccccc;
+  position: relative;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_source .contrast_price_source_left {
+  position: absolute;
+  top: 0.36rem;
+  left: 0.2rem;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_source .contrast_price_source_left img {
+  width: 0.45333333rem;
+  height: 0.45333333rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_source .contrast_price_source_left span {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 0.32rem;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_source .contrast_price_source_right {
+  position: absolute;
+  top: 0.26666667rem;
+  right: 0.2rem;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_source .contrast_price_source_right span {
+  color: #9b0000;
+  font-size: 0.32rem;
+  display: inline-block;
+  margin-right: 0.26666667rem;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_source .contrast_price_source_right a {
+  width: 1.52rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.32rem;
+  border: 0.02666667rem solid #ff3f00;
+  border-radius: 0.13333333rem;
+  background-color: #ff5000;
+  display: inline-block;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_explain {
+  width: 100%;
+  height: 1.52rem;
+  border-bottom: 0.10666667rem solid #606060;
+  overflow: hidden;
+}
+.mmb_commodity_contrast_price .contrast_price .contrast_price_explain span {
+  color: #777777;
+  font-size: 0.26666667rem;
+}
+.mmb_commodity_evaluate {
+  width: 100%;
+  margin-top: 0.06666667rem;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.mmb_commodity_evaluate .commodity_evaluate_title {
+  width: 100%;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  box-sizing: border-box;
+  border-top: 2px solid #6e6e6e;
+  border-bottom: 2px solid #6e6e6e;
+  background-color: #dbdbdb;
+  text-align: center;
+}
+.mmb_commodity_evaluate .commodity_evaluate_title span {
+  color: #000000;
+  font-size: 0.32rem;
+}
+.mmb_commodity_evaluate .commodity_evaluates {
+  width: 100%;
+}
+.mmb_commodity_evaluate .commodity_evaluates li {
+  padding: 0.2rem;
+  border-bottom: 0.02666667rem solid #cccccc;
+  box-sizing: border-box;
+}
+.mmb_commodity_evaluate .commodity_evaluates li .user_evaluates_info {
+  height: 0.66666667rem;
+}
+.mmb_commodity_evaluate .commodity_evaluates li .user_evaluates_info span {
+  font-size: 0.24rem;
+  color: #777777;
+}
+.mmb_commodity_evaluate .commodity_evaluates li .user_evaluates_info .user_buy_source {
+  position: relative;
+}
+.mmb_commodity_evaluate .commodity_evaluates li .user_evaluates_info .user_buy_source span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mmb_commodity_evaluate .commodity_evaluates li .user_evaluates {
+  width: 100%;
+}
+.mmb_commodity_evaluate .commodity_evaluates li .user_evaluates p {
+  text-indent: 2em;
+  font-size: 0.26666667rem;
+  line-height: 1.8em;
+}
+.mmb_commodity_evaluate .commodity_evaluate_more {
+  width: 100%;
+  height: 1.81333333rem;
+  position: relative;
+  background-color: #ffffff;
+}
+.mmb_commodity_evaluate .commodity_evaluate_more a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.4rem;
+  margin-left: -4.66666667rem;
+  width: 9.33333333rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  display: block;
+  background-color: #ccc;
+  border: 0.02666667rem solid #787878;
+  border-radius: 0.13333333rem;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #000000;
+}
