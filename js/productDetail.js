@@ -46,4 +46,4 @@ $(function() {
             $('.commodity_evaluates').html(template('user_commodity_evaluates', data));
         }
     });
-})
+});

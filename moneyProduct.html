@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买 - 省钱折扣</title>
+    <!-- 引入样式统一化 CSS 文件 -->
+    <link rel="stylesheet" href="./css/common/normalize.css">
+    <!-- 引入网站初始化 CSS 文件 -->
+    <link rel="stylesheet" href="./css/common/base.css">
+    <!-- 引入网站基础 CSS 文件 -->
+    <link rel="stylesheet" href="./css/common/core.css">
+    <!-- 引入 省钱折扣 CSS 文件 -->
+    <link rel="stylesheet" href="./css/moneyProduct.css">
+    <!-- 引入 flexible JS 文件 -->
+    <script src="./lib/flexible/flexible.min.js"></script>
+</head>
+<body>
+    <div class="mmb_container">
+        <!-- 省钱折扣网页头部 -->
+        <div class="moneyProduct_header">
+            <a class="moneyProduct_prev" href="javascript:history.go(-1);">
+                <img src="./images/icback.svg" alt="">
+            </a>
+            <div class="moneyProduct_logo_div">
+                省钱折扣
+                <!-- 注意：span 和外层 div 不在同一文档流下，span 会产生越界行为 -->
+                <!-- 需要查询 HTML 文档流资料 -->
+                <!-- <span>省钱折扣</span> -->
+            </div>
+            <a class="moneyProduct_app_download" href="#">
+                <img src="./images/header_app.png" alt="">
+            </a>
+        </div>
+        <!-- 省钱折扣商品信息推荐区域 -->
+        <div class="moneyProduct_recommend_info">
+            <div class="recommend_info">
+                <!-- artTemplate 区域 -->
+            </div>
+        </div>
+        <!-- 慢慢买网页底部 -->
+        <div class="mmb_footer">
+            <div class="footer_menu">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a class="footer_menu_returnTop" href="javascript:;">
+                    <i></i>
+                    返回顶部
+                </a>
+            </div>
+            <div class="footer_info">
+                <div>
+                    <a class="app_download" href="#">手机APP下载</a>
+                    <a class="mobile_web" href="#">慢慢买手机版</a>
+                    <span>--掌上比价平台</span>
+                </div>
+                <div>
+                    <span>m.manmanbuy.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 省钱折扣推荐区域模板 -->
+    <script type="text/html" id="recommend_infos">
+        {{each result v i}}
+        <!-- 商品信息 - 标题 -->
+        <div class="info_title">
+            <span>{{v.productName}}</span>
+        </div>
+        <!-- 商品信息 - 来源、时间、编辑 -->
+        <div class="info_other">
+            <span class="source">{{v.productFrom}}</span>
+            <span class="time">{{v.productTime}}</span>
+            <span class="name">{{v.productTips}}</span>
+        </div>
+        <!-- 商品信息 - 内容介绍 -->
+        <div class="info_content clearfix">
+            <div class="info_img_sm">
+                {{@v.productImgSm}}
+            </div>
+            <p class="p1">{{v.productInfo}}</p>
+            <p class="p2">{{v.productInfo1}}</p>
+            <p class="p3">{{v.productInfo2}}</p>
+            <div class="info_img_lg">
+                {{@v.productImgLg}}
+            </div>
+        </div>
+        <!-- 商品信息 - 货源状况 -->
+        <div class="info_city">
+            {{@v.productCity}}
+        </div>
+        <!-- 商品信息 - 前往购买 -->
+        <div class="info_buy_btn">
+            <a href="#">前往购买</a>
+        </div>
+        <!-- 商品信息 - 微信推广 -->
+        <div class="extension_img">
+            <img src="./images/mmbweixin2.png" alt="">
+        </div>
+        <!-- 商品信息 - 评论 -->
+        <div class="info_comment">
+            {{@v.productComment}}
+        </div>
+        {{/each}}
+    </script>
+
+    <!-- 引入 JQuery 文件 -->
+    <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
+    <!-- 引入模板引擎 JS 文件 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    
+    <!-- 调用功能模块 回到顶部 功能 -->
+    <script src="./js/tools/tools-goBackTop.js"></script>
+    <!-- 调用功能模块 获取地址栏传递参数 功能 -->
+    <script src="./js/tools/tools.js"></script>
+    <!-- 引入 省钱折扣 JS 文件 -->
+    <script src="./js/moneyProduct.js"></script>
+</body>
+</html>

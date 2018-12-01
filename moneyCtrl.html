@@ -24,7 +24,11 @@
                 <img src="./images/icback.svg" alt="">
             </a>
             <div class="moneyCtrl_logo_div">
-                <span>省钱控&nbsp;-&nbsp;最新优惠</span>
+                省钱控&nbsp;-&nbsp;最新优惠
+                <!-- 注意：span 和外层 div 不在同一文档流下，span 会产生越界行为 -->
+                <!-- 需要查询 HTML 文档流资料 -->
+                <!-- https://segmentfault.com/a/1190000012425858 -->
+                <!-- <span>省钱控&nbsp;-&nbsp;最新优惠</span> -->
             </div>
             <a class="moneyCtrl_app_download" href="#">
                 <img src="./images/header_app.png" alt="">
@@ -40,12 +44,12 @@
         </div>
         <!-- 省钱控列表分页跳转 -->
         <div class="moneyCtrl_commodity_lists_page clearfix">
-                <button class="prev fl">上一页</button>
-                <select class="page_select" name="page_select" id="page_select">
-                    <!-- artTemplate 区域 -->
-                </select>
-                <button class="next fr">下一页</button>
-            </div>
+            <button class="prev fl">上一页</button>
+            <select class="page_select" name="page_select" id="page_select">
+                <!-- artTemplate 区域 -->
+            </select>
+            <button class="next fr">下一页</button>
+        </div>
         <!-- 慢慢买网页底部 -->
         <div class="mmb_footer">
             <div class="footer_menu">
@@ -75,9 +79,9 @@
     <script type="text/html" id="recommend_lists">
         {{each result v i}}
         <li>
-            <a class="clearfix" href="moneyproduct.html?productid={{v.productId}}">
+            <a class="clearfix" href="moneyproduct.html?productId={{v.productId}}">
                 <div class="list_img fl">
-                    {{@v.productImgLg}}
+                    {{@v.productImgSm}}
                 </div>
                 <div class="list_info fr">
                     <div class="list_info_title txt-cut">
@@ -117,6 +121,8 @@
     
     <!-- 调用功能模块 回到顶部 功能 -->
     <script src="./js/tools/tools-goBackTop.js"></script>
+    <!-- 调用功能模块 获取地址栏传递参数 功能 -->
+    <script src="./js/tools/tools.js"></script>
     <!-- 引入 省钱控 JS 文件 -->
     <script src="./js/moneyCtrl.js"></script>
 </body>

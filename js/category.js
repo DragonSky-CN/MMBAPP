@@ -68,4 +68,4 @@ $(function() {
             $div.css('transform', 'rotate(180deg)');
         }
     }
-})
+});

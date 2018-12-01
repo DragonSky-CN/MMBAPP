@@ -37,7 +37,7 @@ $(function() {
             // 控制台调试输出语句
             // console.log(data);
             var comcountArr = [];
-            var comcountObj = {};
+            // var comcountObj = {};
             data.result.forEach(function(e, i) {
                 comcountArr.push(e.productComCount.slice(1).split("人")[0]);
             });

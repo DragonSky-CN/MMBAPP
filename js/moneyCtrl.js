@@ -1,6 +1,7 @@
 $(function() {
     // 当前页面标识
-    var currentPage = 1;
+    // var currentPage = 1;
+    var currentPage = typeof(tools.getParameter.getUrlParameter('pageid')) == 'undefined' ? 1 : tools.getParameter.getUrlParameter('pageid');
     // 总页数变量
     var totlePage;
     // 发送 ajax 请求获取 推荐区域 信息并渲染到页面
@@ -15,10 +16,9 @@ $(function() {
             dataType: 'json',
             success: function( data ) {
                 // 控制台调试输出语句
-                console.log(data);
+                // console.log(data);
                 // 评论字符串截取
                 var comcountArr = [];
-                var comcountObj = {};
                 data.result.forEach(function(e, i) {
                     comcountArr.push(e.productComCount.slice(1).split("人")[0]);
                 });
@@ -54,9 +54,7 @@ $(function() {
             return false;
         }
         currentPage--;
-        render(currentPage);
-        // 返回顶部
-        $(window).scrollTop(0);
+        location.href="moneyctrl.html?pageid="+(currentPage);
     });
     // 点击下一页并渲染指定页面
     $('.moneyCtrl_commodity_lists_page .next').click(function() {
@@ -64,14 +62,10 @@ $(function() {
             return false;
         }
         currentPage++;
-        render(currentPage);
-        // 返回顶部
-        $(window).scrollTop(0);
+        location.href="moneyctrl.html?pageid="+(currentPage);
     });
     // 点击分页器并渲染指定页面
     $('#page_select').on('change', function() {
-        render($('#page_select option:selected').val());
-        // 返回顶部
-        $(window).scrollTop(0);
+        location.href="moneyctrl.html?pageid="+($('#page_select option:selected').val());
     });
 });

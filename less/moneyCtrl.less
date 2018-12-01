@@ -28,13 +28,17 @@
         margin-left: -(371rem/@base)/2;
         width: 371rem/@base;
         height: 50rem/@base;
+        line-height: 50rem/@base;
         text-align: center;
-        span {
-            height: 50rem/@base;
-            line-height: 50rem/@base;
-            font-size: 32rem/@base;
-            color: #ffffff;
-        }
+        color: #ffffff;
+        font-size: 32rem/@base;
+        // span 和外层 div 不在同一文档流下，span 会产生越界行为
+        // span {
+        //     height: 50rem/@base;
+        //     line-height: 50rem/@base;
+        //     font-size: 32rem/@base;
+        //     color: #ffffff;
+        // }
     }
     // 省钱控网页头部 - APP下载区域
     .moneyCtrl_app_download {

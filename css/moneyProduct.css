@@ -1,0 +1,211 @@
+.moneyProduct_header {
+  width: 100%;
+  height: 1.30666667rem;
+  background-color: #ff841d;
+  position: relative;
+  border-bottom: 0.02666667rem solid #e8d0bc;
+}
+.moneyProduct_header .moneyProduct_prev {
+  position: absolute;
+  top: 50%;
+  left: 0.44rem;
+  margin-top: -0.24rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  display: block;
+}
+.moneyProduct_header .moneyProduct_logo_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.33333333rem;
+  margin-left: -2.47333333rem;
+  width: 4.94666667rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.42666667rem;
+}
+.moneyProduct_header .moneyProduct_app_download {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.17333333rem;
+  display: block;
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+}
+.moneyProduct_recommend_info {
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+}
+.moneyProduct_recommend_info .recommend_info {
+  padding-top: 0.4rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_title {
+  color: #353535;
+  font-size: 0.48rem;
+  font-weight: 700;
+}
+.moneyProduct_recommend_info .recommend_info .info_other {
+  margin-top: 0.4rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_other span {
+  margin-left: 0.13333333rem;
+  color: #888888;
+  font-size: 0.24rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_other span:first-child {
+  margin-left: 0;
+}
+.moneyProduct_recommend_info .recommend_info .info_content {
+  margin-top: 0.4rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_content .info_img_sm {
+  float: right;
+  width: 3.73333333rem;
+  height: 3.73333333rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_content p {
+  color: #686666;
+  font-size: 0.32rem;
+  text-indent: 2em;
+}
+.moneyProduct_recommend_info .recommend_info .info_content .info_img_lg {
+  width: 100%;
+  margin-top: 0.2rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_city {
+  margin: 0.2rem auto 0;
+  width: 4rem;
+  box-shadow: 0.01333333rem 0.04rem 0.06666667rem rgba(0, 0, 0, 0.1);
+}
+.moneyProduct_recommend_info .recommend_info .info_city ul li {
+  margin: 0 0.13333333rem;
+  padding: 0.06666667rem;
+  border-bottom: 0.01333333rem dashed #eeeeee;
+}
+.moneyProduct_recommend_info .recommend_info .info_city ul li a {
+  width: 100%;
+  display: block;
+  color: #000000;
+  font-size: 0.18666667rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_city ul li span {
+  width: 100%;
+  display: block;
+  font-weight: 700;
+}
+.moneyProduct_recommend_info .recommend_info .info_city ul li span strong {
+  float: right;
+  color: #f4830d;
+}
+.moneyProduct_recommend_info .recommend_info .info_buy_btn {
+  width: 100%;
+  height: 1.33333333rem;
+  position: relative;
+}
+.moneyProduct_recommend_info .recommend_info .info_buy_btn a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.41333333rem;
+  margin-left: -4.46666667rem;
+  width: 8.93333333rem;
+  height: 0.82666667rem;
+  line-height: 0.82666667rem;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.37333333rem;
+  background-color: #ff841d;
+  border: 2px solid #ff7300;
+  border-radius: 0.13333333rem;
+}
+.moneyProduct_recommend_info .recommend_info .extension_img {
+  width: 100%;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment {
+  margin-top: 0.4rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .tit {
+  margin-bottom: 0.33333333rem;
+  font-size: 0.32rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .reply {
+  margin-bottom: 0.33333333rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .reply textarea {
+  width: 100%;
+  height: 2rem;
+  border: 2px solid #e4e2df;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 0.32rem;
+  border-radius: 0.13333333rem 0.13333333rem 0 0;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .reply .ctrl {
+  width: 100%;
+  height: 1.01333333rem;
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #e4e2df;
+  border-radius: 0 0 0.13333333rem 0.13333333rem;
+  position: relative;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .reply .ctrl input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 1.01333333rem;
+  border: none;
+  border-radius: 0 0 0.13333333rem 0;
+  outline: none;
+  background-color: #ff841d;
+  color: #fff;
+  font-size: 0.32rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b {
+  overflow: hidden;
+  padding-bottom: 0.33333333rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b .userimg {
+  width: 1.09333333rem;
+  height: 1.09333333rem;
+  float: left;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b .userimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b .con {
+  float: right;
+  font-size: 0.26666667rem;
+  width: 85%;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b .con .name {
+  line-height: 0.6rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b .con .name .username {
+  float: left;
+  color: #5997c0;
+  font-size: 0.26666667rem;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b .con .name .time {
+  float: right;
+  font-size: 0.26666667rem;
+  color: #666;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b .con .content {
+  color: #666;
+}
+.moneyProduct_recommend_info .recommend_info .info_comment .ui-border-b .con .content img {
+  width: 0.29333333rem;
+  height: 0.29333333rem;
+}
