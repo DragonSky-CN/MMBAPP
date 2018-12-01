@@ -1,0 +1,136 @@
+.moneyCtrl_header {
+  width: 100%;
+  height: 1.30666667rem;
+  background-color: #ff841d;
+  position: relative;
+  border-bottom: 0.02666667rem solid #e8d0bc;
+}
+.moneyCtrl_header .moneyCtrl_prev {
+  position: absolute;
+  top: 50%;
+  left: 0.44rem;
+  margin-top: -0.24rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  display: block;
+}
+.moneyCtrl_header .moneyCtrl_logo_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.33333333rem;
+  margin-left: -2.47333333rem;
+  width: 4.94666667rem;
+  height: 0.66666667rem;
+  text-align: center;
+}
+.moneyCtrl_header .moneyCtrl_logo_div span {
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  font-size: 0.42666667rem;
+  color: #ffffff;
+}
+.moneyCtrl_header .moneyCtrl_app_download {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.17333333rem;
+  display: block;
+  width: 0.90666667rem;
+  height: 0.90666667rem;
+}
+.moneyCtrl_recommend {
+  width: 100%;
+  background-color: #ffffff;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li {
+  height: 3.4rem;
+  border-bottom: 2px solid #e7e7e7;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_img {
+  width: 3.4rem;
+  height: 100%;
+  position: relative;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1.33333333rem;
+  margin-left: -1.33333333rem;
+  width: 2.66666667rem;
+  height: 2.66666667rem;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_info {
+  width: 6.53333333rem;
+  height: 100%;
+  position: relative;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_info .list_info_title {
+  margin-top: 0.4rem;
+  line-height: 0.46666667rem;
+  padding-right: 0.26666667rem;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_info .list_info_title .list_info_title_name {
+  color: #000000;
+  font-size: 0.4rem;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_info .list_info_title .list_info_title_price {
+  color: #ff841d;
+  font-size: 0.4rem;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_info .list_info_other {
+  position: absolute;
+  bottom: 0.26666667rem;
+  left: 0;
+  width: 100%;
+  font-size: 0.33333333rem;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_info .list_info_other .list_info_source {
+  color: #cccccc;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_info .list_info_other .list_info_num {
+  color: #cccccc;
+  margin-right: 0.26666667rem;
+}
+.moneyCtrl_recommend .recommend_list .recommend_list_ul li a .list_info .list_info_other .list_info_num i {
+  width: 0.26666667rem;
+  height: 0.26666667rem;
+  display: inline-block;
+  background: url("../images/2.svg") no-repeat center;
+}
+.moneyCtrl_commodity_lists_page {
+  width: 100%;
+  height: 1.22666667rem;
+  background: #ffffff;
+  position: relative;
+}
+.moneyCtrl_commodity_lists_page button {
+  width: 2.13333333rem;
+  height: 0.88rem;
+  display: block;
+  margin-top: 0.17333333rem;
+  margin-left: 0.13333333rem;
+  margin-right: 0.13333333rem;
+  color: #000000;
+  font-size: 0.32rem;
+  border: 0.02666667rem solid #cccccc;
+  border-radius: 0.13333333rem;
+}
+.moneyCtrl_commodity_lists_page .page_select {
+  position: absolute;
+  top: 0.17333333rem;
+  left: 50%;
+  margin-left: -0.86666667rem;
+  width: 1.73333333rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  text-align: center;
+  font-size: 0.32rem;
+  border: 0.02666667rem solid #cccccc;
+  border-radius: 0.06666667rem;
+}

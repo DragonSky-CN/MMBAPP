@@ -74,6 +74,7 @@
 .mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_title {
   margin-top: 0.4rem;
   line-height: 0.46666667rem;
+  padding-right: 0.26666667rem;
 }
 .mmb_commodity_lists .commodity_list_ul li a .list_info .list_info_title .commodity_name {
   color: #000000;

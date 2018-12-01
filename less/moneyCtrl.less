@@ -1,0 +1,158 @@
+@desgin: 750;                   // 设计图尺寸 750px
+@base: @desgin / 10;            // 基准值 75
+@mmbColor: #ff841d;           // 慢慢买网站主题色
+
+// 省钱控网页头部
+.moneyCtrl_header {
+    width: 100%;
+    height: 98rem/@base;
+    background-color: @mmbColor;
+    position: relative;
+    border-bottom: 2rem/@base solid #e8d0bc;
+    // 省钱控网页头部 - 返回首页
+    .moneyCtrl_prev {
+        position: absolute;
+        top: 50%;
+        left: 33rem/@base;
+        margin-top: -(36rem/@base)/2;
+        width: 36rem/@base;
+        height: 36rem/@base;
+        display: block;
+    }
+    // 省钱控网页头部 - Logo区域
+    .moneyCtrl_logo_div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -(50rem/@base)/2;
+        margin-left: -(371rem/@base)/2;
+        width: 371rem/@base;
+        height: 50rem/@base;
+        text-align: center;
+        span {
+            height: 50rem/@base;
+            line-height: 50rem/@base;
+            font-size: 32rem/@base;
+            color: #ffffff;
+        }
+    }
+    // 省钱控网页头部 - APP下载区域
+    .moneyCtrl_app_download {
+        position: absolute;
+        top: 15rem/@base;
+        right: 13rem/@base;
+        display: block;
+        width: 68rem/@base;
+        height: 68rem/@base;
+    }
+}
+
+// 省钱控推荐区域
+.moneyCtrl_recommend {
+    width: 100%;
+    background-color: #ffffff;
+    // 省钱控推荐区域 - 商品列表
+    .recommend_list {
+        .recommend_list_ul {
+            li {
+                height: 255rem/@base;
+                border-bottom: 2px solid #e7e7e7;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    // 省钱控推荐区域 - 商品列表 - 商品图片
+                    .list_img {
+                        width: 255rem/@base;
+                        height: 100%;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin-top: -(200rem/@base)/2;
+                            margin-left: -(200rem/@base)/2;
+                            width: 200rem/@base;
+                            height: 200rem/@base;   
+                        }
+                    }
+                    // 省钱控推荐区域 - 商品列表 - 商品信息
+                    .list_info {
+                        width: 490rem/@base;
+                        height: 100%;
+                        position: relative;
+                        .list_info_title {
+                            margin-top: 30rem/@base;
+                            line-height: 35rem/@base;
+                            padding-right: 20rem/@base;
+                            .list_info_title_name {
+                                color: #000000;
+                                font-size: 30rem/@base;
+                            }
+                            .list_info_title_price {
+                                color: @mmbColor;
+                                font-size: 30rem/@base;
+                            }
+                        }
+                        .list_info_other {
+                            position: absolute;
+                            bottom: 20rem/@base;
+                            left: 0;
+                            width: 100%;
+                            font-size: 25rem/@base;
+                            .list_info_source {
+                                color: #cccccc;
+                            }
+                            .list_info_num {
+                                color: #cccccc;
+                                margin-right: 20rem/@base;
+                                i {
+                                    width: 20rem/@base;
+                                    height: 20rem/@base;
+                                    display: inline-block;
+                                    background: url("../images/2.svg") no-repeat center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 省钱控列表分页跳转
+.moneyCtrl_commodity_lists_page {
+    width: 100%;
+    height: 92rem/@base;
+    background: #ffffff;
+    position: relative;
+    // 省钱控列表分页跳转 - 上下页面按钮
+    button {
+        width: 160rem/@base;
+        height: 66rem/@base;
+        display: block;
+        border: 2rem/@base solid #ccc;
+        margin-top: 13rem/@base;
+        margin-left: 10rem/@base;
+        margin-right: 10rem/@base;
+        color: #000000;
+        font-size: 24rem/@base;
+        border: 2rem/@base solid #ccc;
+        border-radius: 10rem/@base;
+    }
+    // 省钱控列表分页跳转 - 下拉选择分页跳转
+    .page_select {
+        position: absolute;
+        top: 13rem/@base;
+        left: 50%;
+        margin-left: -(130rem/@base)/2;
+        width: 130rem/@base;
+        height: 66rem/@base;
+        line-height: 66rem/@base;
+        text-align: center;
+        font-size: 24rem/@base;
+        border: 2rem/@base solid #ccc;
+        border-radius: 5rem/@base;
+    }
+}

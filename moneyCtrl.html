@@ -4,63 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>慢慢买 - 首页</title>
+    <title>慢慢买 - 省钱控</title>
     <!-- 引入样式统一化 CSS 文件 -->
     <link rel="stylesheet" href="./css/common/normalize.css">
     <!-- 引入网站初始化 CSS 文件 -->
     <link rel="stylesheet" href="./css/common/base.css">
     <!-- 引入网站基础 CSS 文件 -->
     <link rel="stylesheet" href="./css/common/core.css">
-    <!-- 引入首页 CSS 文件 -->
-    <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入 省钱控 CSS 文件 -->
+    <link rel="stylesheet" href="./css/moneyCtrl.css">
     <!-- 引入 flexible JS 文件 -->
     <script src="./lib/flexible/flexible.min.js"></script>
 </head>
 <body>
     <div class="mmb_container">
-        <!-- 慢慢买网页头部 -->
-        <div class="mmb_header">
-            <div class="mmb_logo_div">
-                <img class="mmb_logo" src="./images/header_logo.png" alt="">
+        <!-- 省钱控网页头部 -->
+        <div class="moneyCtrl_header">
+            <a class="moneyCtrl_prev" href="index.html">
+                <img src="./images/icback.svg" alt="">
+            </a>
+            <div class="moneyCtrl_logo_div">
+                <span>省钱控&nbsp;-&nbsp;最新优惠</span>
             </div>
-            <a class="mmb_app_download" href="#">
+            <a class="moneyCtrl_app_download" href="#">
                 <img src="./images/header_app.png" alt="">
             </a>
         </div>
-        <!-- 慢慢买搜索栏 -->
-        <div class="mmb_search">
-            <input class="search_input" type="text" placeholder="请输入你想比价的商品">
-            <button class="search_btn">搜索</button>
-        </div>
-        <!-- 慢慢买菜单栏 -->
-        <div class="mmb_menus clearfix">
-            <!-- artTemplate 区域 -->
-        </div>
-        <!-- 折扣推荐区域 -->
-        <div class="mmb_recommend">
-            <div class="recommend_title">
-                <h6>超值折扣推荐</h6>
-                <a href="#"></a>
-            </div>
+        <!-- 省钱控推荐区域 -->
+        <div class="moneyCtrl_recommend">
             <div class="recommend_list">
                 <ul class="recommend_list_ul">
                     <!-- artTemplate 区域 -->
                 </ul>
             </div>
-            <div class="recommend_more">
-                <a href="#">
-                    <span>更多优惠信息 >></span>
-                    <i></i>
-                </a>
-            </div>
         </div>
-        <!-- 品牌排行区域 -->
-        <div class="mmb_rank">
-            <div class="rank_title">
-                <h6>品牌排行</h6>
-                <a href="#"></a>
+        <!-- 省钱控列表分页跳转 -->
+        <div class="moneyCtrl_commodity_lists_page clearfix">
+                <button class="prev fl">上一页</button>
+                <select class="page_select" name="page_select" id="page_select">
+                    <!-- artTemplate 区域 -->
+                </select>
+                <button class="next fr">下一页</button>
             </div>
-        </div>
         <!-- 慢慢买网页底部 -->
         <div class="mmb_footer">
             <div class="footer_menu">
@@ -86,30 +71,11 @@
 
 
 
-    <!-- 菜单栏模板 -->
-    <script type="text/html" id="menu_items">
-        {{each result v i}}
-        <!-- 根据 indexmenuId 的值是否为 7 判断是否是更多菜单 -->
-        <div class="menu_item fl {{v.indexmenuId == 7 ? "more" : ""}}">
-            <!-- 后台数据会返回 # 字符，造成点击 更多 选项页面刷新的小 BUG -->
-            {{if v.titlehref == '#'}}
-            <a class="menu_item_link" href="javascript:;">
-            {{else}}
-            <a class="menu_item_link" href="{{v.titlehref}}">
-            {{/if}}
-                <!-- 因为保护措施 artTemplate 会转义 HTML 代码为字符串输出，如果不需要转义时只需要在前面加个 @ 号（以前是 # 号） -->
-                {{@v.img}}
-                <h6>{{v.name}}</h6>
-            </a>
-        </div>
-        {{/each}}
-    </script>
-
-    <!-- 折扣推荐区域模板 -->
+    <!-- 省钱控推荐区域模板 -->
     <script type="text/html" id="recommend_lists">
         {{each result v i}}
         <li>
-            <a class="clearfix" href="#">
+            <a class="clearfix" href="moneyproduct.html?productid={{v.productId}}">
                 <div class="list_img fl">
                     {{@v.productImgLg}}
                 </div>
@@ -132,6 +98,17 @@
         </li>
         {{/each}}
     </script>
+    
+    <!-- 省钱控列表分页跳转下拉菜单模板 -->
+    <script type="text/html" id="page_list">
+        {{each data v i}}
+        {{if i == v.currentPageNum-1}}
+        <option selected value="{{i + 1}}">{{i + 1}}&nbsp;/&nbsp;{{v.totlePage}}</option>
+        {{else}}
+        <option value="{{i + 1}}">{{i + 1}}&nbsp;/&nbsp;{{v.totlePage}}</option>
+        {{/if}}
+        {{/each}}
+    </script>
 
     <!-- 引入 JQuery 文件 -->
     <script src="./lib/jquery/jquery-1.12.4.min.js"></script>
@@ -140,7 +117,7 @@
     
     <!-- 调用功能模块 回到顶部 功能 -->
     <script src="./js/tools/tools-goBackTop.js"></script>
-    <!-- 引入首页 JS 文件 -->
-    <script src="./js/index.js"></script>
+    <!-- 引入 省钱控 JS 文件 -->
+    <script src="./js/moneyCtrl.js"></script>
 </body>
 </html>
